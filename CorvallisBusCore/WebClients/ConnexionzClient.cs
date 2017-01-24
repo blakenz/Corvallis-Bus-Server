@@ -17,7 +17,7 @@ namespace API.WebClients
     /// </summary>
     public static class ConnexionzClient
     {
-        private const string BASE_URL = "http://www.corvallistransit.com/rtt/public/utility/file.aspx?contenttype=SQLXML";
+        private const string BASE_URL = "http://rtt.metroinfo.org.nz/rtt/public/utility/file.aspx?contenttype=SQLXML";
 
         public static readonly Lazy<List<ConnexionzPlatform>> Platforms = new Lazy<List<ConnexionzPlatform>>(DownloadPlatforms);
         public static readonly Lazy<List<ConnexionzRoute>> Routes = new Lazy<List<ConnexionzRoute>>(DownloadRoutes);
